@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMS_MM_G21</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Please enter 1, 2, 3 or 4 only !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Please enter 1 or 2 only !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Material Document &amp;1 not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Purchasing Order not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Sale Order &amp;1 not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Reservation Number &amp;1 not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Outbound Delivery Number not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Physical Inventory Document not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Item not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Purchasing Order does not belonging in selected Plant (DL21/SG21)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Sale Order does not belonging in selected Plant (DL21/SG21)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Please enter Batch Number in selected lines item !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Batch Number invalid, please enter again !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Please enter Serial Number in selected lines item !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>Serial Number invalid, please enter again !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Please select at least one line item !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Material Document: ........../.........</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Post Goods Receipt successfully! Material Document: &amp;1/&amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Post Goods Issue successfully! Material Document: &amp;1/&amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Stock data of Serial number not suitable for movement.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>BAPI_INB_DELIVERY_CHANGE error.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Reverse Document successfully ! New Material Document: &amp;1/&amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Outbound Delivery not found !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Reverse failed for Reservation. Material Document already canceled/revers</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Please enter Physical Inventory Document !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>PI Document does not exist !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Please enter PI Item !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Count save successfully !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Count failed !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Recount Document created !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>All items in Inventory Document recounted !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>Please enter select number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Please enter Purchasing Order Number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Purchasing Order Number &amp;1 does not exist !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Inbound Delivery not found for this PO Number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>Please select 1, 2, or 3 only !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Please enter Reservation Number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>Please enter Sale Order Number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>Please enter Outbound Delibery Number !</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMS_MM_G21</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

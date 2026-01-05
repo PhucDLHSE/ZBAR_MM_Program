@@ -1,0 +1,2185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZG21_RES_INPUT</NAME>
+    <SUBC>1</SUBC>
+    <APPL>C</APPL>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Reservation Data</ENTRY>
+     <LENGTH>28</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Print Mode</ENTRY>
+     <LENGTH>18</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Reservation Document</ENTRY>
+     <LENGTH>20</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PREV</KEY>
+     <ENTRY>Print Preview</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>P_PRNT</KEY>
+     <ENTRY>Print</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_BDTER</KEY>
+     <ENTRY>Requirement Date</ENTRY>
+     <LENGTH>24</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_KDAUF</KEY>
+     <ENTRY>Sales Order</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_MATNR</KEY>
+     <ENTRY>Material</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_RSNUM</KEY>
+     <ENTRY>Reservation Number</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>S_WERKS</KEY>
+     <ENTRY>Plant</ENTRY>
+     <LENGTH>13</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Selektion von Reservierungen</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Selektion von Aufträgen</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Kommissionierliste</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Reservierungen werden gelesen</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Warenbewegungen werden gebucht</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Warenbewegungen sind fehlerhaft.</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Möchten Sie die Fehler jetzt korrigieren?</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Fehler beim Buchen der Warenbewegungen</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Kommissionierliste: Fehlerhafte Warenbewegungen</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Sollen die Warenbewegungen gebucht werden?</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Warenbewegungen sind erfaßt worden.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Warnung: Datenverlust</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Weitere Selektionskriterien</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Kommissionierliste</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SER</KEY>
+       <ENTRY>ohne serialisierte Materialien</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ADVCOD</KEY>
+       <ENTRY>Hinweiskode</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ANLN1</KEY>
+       <ENTRY>Anlage</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNR</KEY>
+       <ENTRY>Auftrag</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNRA</KEY>
+       <ENTRY>Auftrag</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUTYPA</KEY>
+       <ENTRY>Auftragstyp</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_BDTER</KEY>
+       <ENTRY>Bedarfstermin</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPO</KEY>
+       <ENTRY>Disponent</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPOA</KEY>
+       <ENTRY>Disponent</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_FEVORA</KEY>
+       <ENTRY>Fertigungssteuerer</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KDAUF</KEY>
+       <ENTRY>Kundenauftrag</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KOSTL</KEY>
+       <ENTRY>Kostenstelle</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_LGORT</KEY>
+       <ENTRY>Lagerort</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNRA</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_NPLNR</KEY>
+       <ENTRY>Netzplan</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ORDER</KEY>
+       <ENTRY>Innenauftrag</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PLNFL</KEY>
+       <ENTRY>Folge</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PRIO_R</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>24</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJN</KEY>
+       <ENTRY>PSP-Element</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJNA</KEY>
+       <ENTRY>PSP-Element</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_RSNUM</KEY>
+       <ENTRY>Reservierungsnummer</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMLGO</KEY>
+       <ENTRY>Empf. Lagerort</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMWRK</KEY>
+       <ENTRY>Empf. Werk</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VORNR</KEY>
+       <ENTRY>Vorgangsnummer</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Werk</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Sélection des réservations</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sélection des ordres</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Liste prélèvement</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Réservations lues</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Mouvements stock enregistrés</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Mouvements de stock erronés</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Corriger les erreurs maintenant ?</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Erreur lors enreg. mouvement de stock</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Liste prélèvement : mouvements de stock erronés</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Mouvements de stock à enregistrer ?</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Mouvements de stock saisis</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Perte de données !!!</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Autres critères de sélection</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Liste de prélèvement</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SER</KEY>
+       <ENTRY>sans articles individualisés</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ADVCOD</KEY>
+       <ENTRY>Code information</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ANLN1</KEY>
+       <ENTRY>Immobilisation</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNR</KEY>
+       <ENTRY>Ordre</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNRA</KEY>
+       <ENTRY>Ordre</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUTYPA</KEY>
+       <ENTRY>Catégorie d&apos;ordre</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_BDTER</KEY>
+       <ENTRY>Date du besoin</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPO</KEY>
+       <ENTRY>Gestionnaire</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPOA</KEY>
+       <ENTRY>Gestionnaire</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_FEVORA</KEY>
+       <ENTRY>Agent d&apos;ordonnancement</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KDAUF</KEY>
+       <ENTRY>Commande client</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KOSTL</KEY>
+       <ENTRY>Centre de coûts</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_LGORT</KEY>
+       <ENTRY>Magasin</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Article</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNRA</KEY>
+       <ENTRY>Article</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_NPLNR</KEY>
+       <ENTRY>Réseau</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ORDER</KEY>
+       <ENTRY>Ordre interne</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PLNFL</KEY>
+       <ENTRY>Séquence</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJN</KEY>
+       <ENTRY>Élément d&apos;OTP</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJNA</KEY>
+       <ENTRY>Élément d&apos;OTP</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_RSNUM</KEY>
+       <ENTRY>Numéro de réservation</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMLGO</KEY>
+       <ENTRY>Magasin prenant</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMWRK</KEY>
+       <ENTRY>Division prenante</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VORNR</KEY>
+       <ENTRY>Numéro d&apos;opération</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Division</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PRIO_R</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>24</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Seleção de reservas</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Seleção de ordens</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Lista de picking</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Reservas são lidas</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Movim.de mercad.são registrad.</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Movim.de mercad.com erros.</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Os erros devem ser corrigidos agora?</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Erro durante registro de movim.mercad.</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Lista picking: movim.de mercad.com erros</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Os movim.de mercad.devem ser registrados?</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Movim.mercad.foram entrados</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Aviso: perda de dados</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Outros critérios de seleção</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Lista de picking</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SER</KEY>
+       <ENTRY>Sem materiais seriados</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ADVCOD</KEY>
+       <ENTRY>Código de informação</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ANLN1</KEY>
+       <ENTRY>Imobilizado</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNR</KEY>
+       <ENTRY>Ordem</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNRA</KEY>
+       <ENTRY>Ordem</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUTYPA</KEY>
+       <ENTRY>Categoria de ordem</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_BDTER</KEY>
+       <ENTRY>Data da necessidade</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPO</KEY>
+       <ENTRY>Planejador MRP</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPOA</KEY>
+       <ENTRY>Planejador MRP</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_FEVORA</KEY>
+       <ENTRY>Responsável pelo ctrl.produção</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KDAUF</KEY>
+       <ENTRY>Ordem do cliente</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KOSTL</KEY>
+       <ENTRY>Centro de custo</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_LGORT</KEY>
+       <ENTRY>Depósito</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNRA</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_NPLNR</KEY>
+       <ENTRY>Diagrama de rede</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ORDER</KEY>
+       <ENTRY>Ordem interna</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PLNFL</KEY>
+       <ENTRY>Seq.</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJN</KEY>
+       <ENTRY>Elemento PEP</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJNA</KEY>
+       <ENTRY>Elemento PEP</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_RSNUM</KEY>
+       <ENTRY>Nº reserva</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMLGO</KEY>
+       <ENTRY>Depósito de recebimento</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMWRK</KEY>
+       <ENTRY>Centro receptor/depósito</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VORNR</KEY>
+       <ENTRY>Nº operação</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Centro</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PRIO_R</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>24</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Выбор резервирований</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Выбор заказов</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>КомплектВедомость</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Резервирования считываются</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Выполняется проводка ДвижМтр</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>ДвиженияМтр содержат ошибки.</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>Исправить ошибки сейчас?</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Ошибка при проводке движений материала</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Комплектовочная ведомость: ДвиженМтр с ошибками</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>Выполнить проводку движений материала?</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Движения материала введены</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Предупр.: потеря данных</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Другие критерии выбора</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Комплектовочная ведомость</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SER</KEY>
+       <ENTRY>Без сериализованных материалов</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ADVCOD</KEY>
+       <ENTRY>Код-указатель</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ANLN1</KEY>
+       <ENTRY>Основное средство</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNR</KEY>
+       <ENTRY>Заказ</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNRA</KEY>
+       <ENTRY>Заказ</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUTYPA</KEY>
+       <ENTRY>Тип заказа</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_BDTER</KEY>
+       <ENTRY>Дата потребности</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPO</KEY>
+       <ENTRY>Плановик</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPOA</KEY>
+       <ENTRY>Плановик</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_FEVORA</KEY>
+       <ENTRY>Руководитель производства</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KDAUF</KEY>
+       <ENTRY>Заказ клиента</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KOSTL</KEY>
+       <ENTRY>Место возникновения затрат</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_LGORT</KEY>
+       <ENTRY>Склад</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Материал</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNRA</KEY>
+       <ENTRY>Материал</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_NPLNR</KEY>
+       <ENTRY>Сетевой график</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ORDER</KEY>
+       <ENTRY>Внутренний заказ</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PLNFL</KEY>
+       <ENTRY>Последовательность</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJN</KEY>
+       <ENTRY>СПП-элемент</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJNA</KEY>
+       <ENTRY>СПП-элемент</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_RSNUM</KEY>
+       <ENTRY>Номер резервирования</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMLGO</KEY>
+       <ENTRY>Принимающий склад</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMWRK</KEY>
+       <ENTRY>Принимающий завод</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VORNR</KEY>
+       <ENTRY>Номер операции</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Завод</ENTRY>
+       <LENGTH>13</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PRIO_R</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>24</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Selección de reservas</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Selección de órdenes</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>Lista de picking</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Se leen reservas</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>005</KEY>
+       <ENTRY>Se contab.movimientos mcía.</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>006</KEY>
+       <ENTRY>Movimientos mcía.erróneos</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>008</KEY>
+       <ENTRY>¿Desea corregir ahora los errores?</ENTRY>
+       <LENGTH>41</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>009</KEY>
+       <ENTRY>Error al contab.movimientos mcía.</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>010</KEY>
+       <ENTRY>Lista picking: Movimientos mcía.erróneos</ENTRY>
+       <LENGTH>47</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>011</KEY>
+       <ENTRY>¿Desea contabilizar los movimientos mcía.?</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>012</KEY>
+       <ENTRY>Movimientos mcía.registrados</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>013</KEY>
+       <ENTRY>Advert.: Pérdida datos</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>014</KEY>
+       <ENTRY>Más criterios selección</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Lista de picking</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>P_SER</KEY>
+       <ENTRY>sin materiales con núm.serie</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ADVCOD</KEY>
+       <ENTRY>Código de información</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ANLN1</KEY>
+       <ENTRY>Activo fijo</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNR</KEY>
+       <ENTRY>Orden</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUFNRA</KEY>
+       <ENTRY>Orden</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_AUTYPA</KEY>
+       <ENTRY>Tipo de orden</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_BDTER</KEY>
+       <ENTRY>Fecha necesidad</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPO</KEY>
+       <ENTRY>Planificador necesidades</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_DISPOA</KEY>
+       <ENTRY>Planificador necesidades</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_FEVORA</KEY>
+       <ENTRY>Resp.ctrl.producción</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KDAUF</KEY>
+       <ENTRY>Pedido cliente</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_KOSTL</KEY>
+       <ENTRY>Centro de coste</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_LGORT</KEY>
+       <ENTRY>Almacén</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNR</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_MATNRA</KEY>
+       <ENTRY>Material</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_NPLNR</KEY>
+       <ENTRY>Grafo</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_ORDER</KEY>
+       <ENTRY>Orden CO</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PLNFL</KEY>
+       <ENTRY>Secuencia</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJN</KEY>
+       <ENTRY>Elemento PEP</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PROJNA</KEY>
+       <ENTRY>Elemento PEP</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_RSNUM</KEY>
+       <ENTRY>Número de reserva</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMLGO</KEY>
+       <ENTRY>Alm.receptor</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_UMWRK</KEY>
+       <ENTRY>Centro receptor</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_VORNR</KEY>
+       <ENTRY>Número de operación</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_WERKS</KEY>
+       <ENTRY>Centro</ENTRY>
+       <LENGTH>14</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>S_PRIO_R</KEY>
+       <ENTRY>.</ENTRY>
+       <LENGTH>24</LENGTH>
+       <SPLIT>D</SPLIT>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <LONGTEXTS>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZG21_RES_INPUT</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00040</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZG21_RES_INPUT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;TITLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Kommissionierliste</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit diesem Report können Sie mit Bezug zu einer</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:GLOS.3526BF2AAFAB52B9E10000009B38F974&gt;Reservierung&lt;/&gt; oder einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Auftrag (Fertigungs-, Prozess-, Instandhaltungs-/Serviceauftrag oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Netzplan) eine</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:GLOS.3526BF02AFAB52B9E10000009B38F974&gt;Kommissionierliste&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erstellen. Sie können z. B. aber auch alle Reservierungen zu einem</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Material oder einer Kostenstelle selektieren und so alle Warenbewegungen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>in einem Bearbeitungsschritt erfassen und buchen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Berechtigungsprüfung&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zum Starten des Reports benötigen Sie auf Werksebene die Berechtigung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zum Erfassen von Warenbewegungen (Berechtigungsobjekt</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:UO.M_MSEG_WWA&gt;Warenbewegungen: Werk&lt;/&gt;, Aktivität 01).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In der Kommissionierliste ist es möglich, mit Filterfunktionen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Positionen auszuwählen (z. B. Selektion nach Bewegungsart), zu sortieren</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>und nicht benötigte Positionen auszublenden. Um einen Filter zu setzen,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>wählen Sie &lt;LS&gt;Bearbeiten -&gt; Filter -&gt; Filter setzen&lt;/&gt;. Um einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>gesetzten Filter wieder zu löschen, wählen Sie &lt;LS&gt;Bearbeiten -&gt; Filter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; Filter löschen&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Achtung&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Wenn Sie die Warenbewegungen buchen, wird mit Bezug zu allen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Reservierungen und Aufträgen gebucht, die den Selektionskriterien</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entsprechen; dazu gehören auch die Positionen, die mit der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Filterfunktion ausgeblendet wurden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+       <TDLINE>Wenn Sie zu Positionen keine Warenbewegungen buchen möchten, müssen Sie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>diese Positionen mit &lt;LS&gt;Bearbeiten -&gt; Löschen&lt;/&gt; aus der Liste</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>entfernen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Darüber hinaus können Sie bei Umlagerungen und Warenausgängen zur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Ermittlung der zu buchenden Bestände die Bestandsfindung und die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Chargenfindung aufrufen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit &lt;LS&gt;Springen -&gt; Bestandsfindung&lt;/&gt; rufen Sie die Bestandsfindung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>auf.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit &lt;LS&gt;Umfeld -&gt; Chargenabwicklung -&gt; Chargenfindung&lt;/&gt; rufen Sie die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Chargenfindung auf.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wenn Sie zu einer Position Warenbewegungen aufteilen möchten, z.B. auf</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verschiedene Lagerorte oder Lieferanten, wählen Sie &lt;LS&gt;Bearbeiten -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Splitten&lt;/&gt;. Sie gelangen auf ein Dialogfenster, in dem Sie die zu</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>buchende Menge aufteilen können.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit &lt;LS&gt;Liste -&gt; Buchen&lt;/&gt; buchen Sie die Warenbewegungen.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MMIM_SELEKTION OBJECT DOKU ID TX LANGUAGE DE</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZG21_RES_INPUT</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0006</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00037</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZG21_RES_INPUT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;TITLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Pick List</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can use this report to create a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:GLOS.3526BF02AFAB52B9E10000009B38F974&gt;pick list&lt;/&gt; with reference to</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>a &lt;DS:GLOS.3526BF2AAFAB52B9E10000009B38F974&gt;reservation&lt;/&gt; or an order</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(which may be a production, process, or maintenance/service order or a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>network). However, you can also select all reservations for a material</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>or a cost center and thereby enter and post all goods movements in one</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>step, for example.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Authorization check&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To start the reports you need authorization to enter goods movements at</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>plant level (authorization object &lt;DS:UO.M_MSEG_WWA&gt;Goods Movements:</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Plant&lt;/&gt;, activity 01).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>In the pick (picking) list, you can use filter functions to choose and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sort items, (for example, to select them by movement type), and suppress</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>items that are not required. To set a filter, choose &lt;LS&gt;Edit -&gt; Filter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; Set filter</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;. To delete a filter that has been set, choose &lt;LS&gt;Edit -&gt; Filter -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Delete filter&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Caution&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>When you post the goods movements, you post them with reference to all</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reservations and orders that satisfy the selection criteria; this also</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>includes the items that were suppressed using the filter function.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>If you do not want to post goods movements for items, you have to remove</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>these items from the list by choosing &lt;LS&gt;Edit -&gt; Delete&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can also use the stock determination and batch determination</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>functions to determine the stocks to be posted in stock transfers and</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>goods issues.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To call up stock determination, choose &lt;LS&gt;Goto -&gt; Stock determination</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To call up batch determination, choose &lt;LS&gt;Environment -&gt; Batch handling</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; Batch determination&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>If you want to split goods movements for an item, for example, among</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>various storage locations or vendors, choose &lt;LS&gt;Edit -&gt; Split&lt;/&gt;. A</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dialog box appears, in which you can distribute the quantity to be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>posted.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>To post the goods movements, choose &lt;LS&gt;List -&gt; Post&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MMIM_SELEKTION OBJECT DOKU ID TX LANGUAGE EN</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZG21_RES_INPUT</OBJECT>
+      <LANGU>F</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00039</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZG21_RES_INPUT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>F</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;TITLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Liste de prélèvement</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Ce programme vous permet de créer une liste de prélèvement liée à une</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>réservation ou à un ordre (de fabrication, de processus, de travail, de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>service ou de réseau). Vous pouvez également sélectionner toutes les</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>réservations relatives à un article ou à un centre et saisir et</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>enregistrer ainsi tous les mouvements de stocks en une seule étape de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>traitement.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Contrôle des autorisations&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Pour lancer ce programme, vous avez besoin de l&apos;autorisation de saisie</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des mouvements de stock (objet d&apos;autorisation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:UO.M_MSEG_WWA&gt;Mouvements de stocks : division&lt;/&gt;, activité 01) au</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>niveau de la division.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Vous pouvez utiliser des fonctions de filtrage pour sélectionner des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>postes de cette liste (ex. : sélection par code mouvement), les trier et</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>masquer des postes inutiles. Si vous voulez activer un filtre, cliquez</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sur &lt;LS&gt;Traiter -&gt; Filtre -&gt; Activer filtre&lt;/&gt;. Si vous voulez le</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>supprimer, cliquez sur &lt;LS&gt;Traiter -&gt; Filtre -&gt; Supprimer filtre&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Attention&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Si vous enregistrez des mouvements de stocks, ces enregistrements</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tiennent compte de toutes les réservations et de tous les ordres de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>fabrication correspondant aux critères de sélection, donc également des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>postes masqués avec la fonction de filtrage.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Si vous ne voulez pas enregistrer de mouvements pour certains postes,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>vous devez les supprimer en cliquant sur &lt;LS&gt;Traiter -&gt; Supprimer&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>dans la liste.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Vous pouvez également appeler la détermination des stocks et celle des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>lots dans le cadre des transferts physiques et des sorties de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>marchandises.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Le chemin &lt;LS&gt;Saut -&gt; Détermination des stocks&lt;/&gt; vous permet d&apos;appeler</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la détermination des stocks.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>En cliquant sur &lt;LS&gt;Environnement -&gt; Gestion des lots -&gt; Determination</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>des lots&lt;/&gt; vous passez à la détermination des lots.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Si vous voulez répartir des mouvements sur un poste, par exemple, sur</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>différents magasins ou fournisseurs, cliquez sur &lt;LS&gt;Traiter -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Fractionner&lt;/&gt;. Vous passez à une boîte de dialogue dans laquelle vous</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pouvez répartir la quantité à enregistrer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;LS&gt;Liste -&gt; Enregistrer&lt;/&gt; vous permet d&apos;enregistrer les mouvements de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>stocks.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MMIM_SELEKTION OBJECT DOKU ID TX LANGUAGE FR</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZG21_RES_INPUT</OBJECT>
+      <LANGU>P</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00038</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZG21_RES_INPUT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>P</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;TITLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Lista de picking</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Este report auxilia na criação de uma lista de picking com referência a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>uma reserva ou a uma ordem (de produção, de processo, de serviço ou</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>diagrama de rede). Por exemplo, pode-se selecionar também todas as</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reservas para um material ou um centro de custo e assim entrar e</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>registrar todos os movimentos de mercadorias em uma etapa de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>processamento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Verificação de autorização&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para inicializar o report, necessita-se a autorização no nível de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>centro, para entrar movimentos de mercadorias (objeto de autorização</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:UO.M_MSEG_WWA&gt;Movimentos de mercadorias: centro&lt;/&gt;, atividade 01).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Na lista de picking, é possível selecionar itens com funções de filtro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(por exemplo, seleção segundo o tipo de movimento), separá-los e ocultar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>os itens não necessários. Para definir um filtro, deve-se selecionar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Processar -&gt; Filtro -&gt; Definir filtro&lt;/&gt;. Para eliminar um filtro já</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>definido, deve-se selecionar &lt;LS&gt;Processar -&gt; Filtro -&gt; Eliminar filtro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>=</TDFORMAT>
+       <TDLINE>&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Atenção&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Ao se registrar os movimentos de mercadorias, o registro é efetuado com</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>referência a todas as reservas e ordens que satisfaçam os critérios de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleção; aqui também estão incluídos os itens que foram ocultados com a</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>função de filtro.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Caso não se deseje registrar movimentos de mercadorias para itens,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>deve-se remover estes itens da lista, utilizando &lt;LS&gt;Processar -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Eliminar&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Além disso, pode-se chamar a determinação de estoque e de lotes para</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>determinar os estoques a serem registrados, em caso de transferências de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estoque e saídas de mercadorias.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Com &lt;LS&gt;Saltar -&gt; Determinação de estoque&lt;/&gt;, chama-se a determinação de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>estoque.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Com &lt;LS&gt;Ambiente -&gt; Processamento de lote -&gt; Determinação de lotes&lt;/&gt;,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>chama-se a determinação de lotes.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para distribuir movimentos de mercadorias para um item, por exemplo, em</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>diferentes depósitos ou fornecedores, deve-se selecionar &lt;LS&gt;Processar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; Dividir&lt;/&gt;. Será exibida uma caixa de diálogo, na qual o pode-se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>distribuir a quantidade a ser registrada.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Com &lt;LS&gt;Lista -&gt; Registrar&lt;/&gt;, registra-se os movimentos de mercadorias.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MMIM_SELEKTION OBJECT DOKU ID TX LANGUAGE PT</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>RE</ID>
+      <OBJECT>ZG21_RES_INPUT</OBJECT>
+      <LANGU>S</LANGU>
+      <TYP>E</TYP>
+      <VERSION>0006</VERSION>
+      <TXTLINES>00038</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZG21_RES_INPUT</TDNAME>
+      <TDID>RE</TDID>
+      <TDSPRAS>S</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00006</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;TITLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Lista de picking</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PURPOSE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Con este report se puede crear una lista de picking con referencia a una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reserva o a una orden (de fabricación, proceso, mantenimiento, servicio</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>o grafo). Pero también se puede, por ejemplo, seleccionar todas las</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>reservas referentes a un material o a un centro de coste, de forma que</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>se registren y contabilicen todos los movimientos de mercancía en una</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>sóla etapa de tratamiento.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;PREREQUISITES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Verificación de autorización&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Para iniciar el report es necesaria, a nivel de centro, la autorización</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>para registrar movimientos de mercancías (objeto de autorización</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:UO.M_MSEG_WWA&gt;Movimiento de mercancías: Centro&lt;/&gt;, actividad 01).</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FEATURES&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mediante funciones de filtro, las posiciones de la lista de picking se</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>pueden seleccionar (por ejemplo, según tipo de movimiento), clasificar o</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>eliminar las que no sean necesarias. Para fijar un filtro, seleccione</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Tratar -&gt; Filtro -&gt; Fijar filtro&lt;/&gt;. Para borrar un filtro fijado,</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>seleccione &lt;LS&gt;Tratar -&gt; Filtro -&gt; Borrar filtro&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>&lt;ZH&gt;Atención&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>Al contabilizar los movimientos de mercancías, se contabiliza con</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>referencia a todas las reservas y órdenes que correspondan a los</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>criterios seleccionados; entre ellos se incluye también la posición</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>suprimida con la función de filtro.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AL</TDFORMAT>
+       <TDLINE>En caso de que no quiera contabilizar movimientos de mercancías para</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>algunas posiciones, tendrá que sacar éstas de la lista con la opción</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;LS&gt;Tratar -&gt; Borrar&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Asimismo, en caso de traslados y salidas de mercancías, se puede llamar</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la determinación de stocks y la determinación de lotes para el registro</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>de los stocks a contabilizar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La determinación de stocks se llama con &lt;LS&gt;Pasar a -&gt; Determinación de</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>stocks&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>La determinación de lotes se llama con &lt;LS&gt;Entorno -&gt; Gestión de lotes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>-&gt; Determinación de lotes&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Si, para una posición, quiere distribuir movimientos de mercancías, por</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ejemplo, entre varios almacenes o proveedores, seleccione &lt;LS&gt;Tratar -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Partir&lt;/&gt; y pasará a una ventana de diálogo en la que podrá distribuir</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>la cantidad a contabilizar.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Los movimientos de mercancías se contabilizan con &lt;LS&gt;Listado -&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Contabilizar&lt;/&gt;.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U2</TDFORMAT>
+       <TDLINE>&amp;SELECTION&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MMIM_SELEKTION OBJECT DOKU ID TX LANGUAGE ES</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
