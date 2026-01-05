@@ -1,0 +1,14 @@
+PROCESS BEFORE OUTPUT.
+ MODULE STATUS_0401.
+ MODULE disable_quantity.
+*
+PROCESS AFTER INPUT.
+MODULE EXIT_401 AT EXIT-COMMAND.
+ MODULE USER_COMMAND_0401.
+
+PROCESS ON VALUE-REQUEST.
+  FIELD gv_iblnr MODULE f4_iblnr.
+  FIELD gv_matnr MODULE f4_matnr.
+  FIELD gv_zeili MODULE f4_zeili.
+  FIELD gv_werks_pi MODULE f4_werks.
+  FIELD gv_lgort_pi MODULE f4_lgort.
